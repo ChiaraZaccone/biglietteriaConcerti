@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      body {
+        background-color: #1e2125;
+      }
+
+      h3 {
+        color: #f3f3f3;
+      }
+
+      .navbar-brand {
+        color: #e3e3e3;
+      }
+
+      .navbar-custom {
+        background-color: #1e2125;
+      }
+
+      .form-label {
+        color: #f3f3f3;
+      }
+
+      .btn-success {
+        background-color: #5d28a7;
+        border-color: #4d096b;
+      }
+
+      .btn-secondary {
+        background-color: #2f1160;
+        border-color: #08243d;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Biglietteria Concerti</a>
+            <hr>
+
+            <button class="btn btn-outline-info" id="btnLogin">Torna al login</button>
+          </div>
+        </nav>
+
+      <div class="container-sm">
+        <div class="position-relative mt-5">
+
+            <div class="position-absolute top-50 start-0 translate-middle-y">
+              <button type="button" class="btn btn-outline-primary btn-sm" id="btnElencoSpettacoli">Elenco concerti disponibili: </button>
+            </div>
+            <div class="position-absolute top-50 start-50 translate-middle">
+              <button type="button" class="btn btn-outline-primary btn-sm" id="btnElencoBiglietti">Prenotazioni effettuate: </button>
+            </div>
+            <div class="position-absolute top-50 end-0 translate-middle-y">
+              <button type="button" class="btn btn-success btn-sm" id="btnPrenotaSpettacolo">Prenota il tuo concerto!</button>
+            </div>
+        </div>        
+      </div>
+      
+      <br>
+      <hr>
+      
+      <h3>Concerti disponibili:</h3>
+      <div class="position-relative mt-5">
+          <table class="table table-striped-columns" id="tableSpettacoli">
+            
+          </table>
+        </div>
+
+      <br>
+      <hr>
+
+      <h3>I tuoi biglietti:</h3>
+      <div class="position-relative mt-5">
+          <table class="table table-dark table-striped" id="tableBiglietti">
+            
+          </table>
+         
+        </div>
+        <div class=" my-4 d-flex justify-content-end">
+          <button type="button" class="btn btn-success btn-sm me-2" id="btnModificaBiglietto">Modifica il tuo biglietto</button>
+          <a href="./pagamenti.html"><button type="button" class="btn btn-secondary btn-sm" id="btnPagamenti">Pagamenti</button></a>
+        </div>
+    </div>
+
+   
+    <script src="./js/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>

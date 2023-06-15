@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Biglietteria Spettacoli</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+      body {
+        background-color: #1e2125; /* Cambia il colore di sfondo della pagina */
+      }
+
+      .navbar {
+        background-color: #e3e3e3; /* Cambia il colore di sfondo della navbar */
+      }
+
+      .form-label {
+        color: #f3f3f3; /* Cambia il colore delle etichette del form */
+      }
+
+      .btn-success {
+        background-color: #5d28a7; /* Cambia il colore di sfondo del pulsante "Ordina ora" */
+        border-color: #4d096b; /* Cambia il colore del bordo del pulsante "Ordina ora" */
+      }
+
+      .btn-secondary {
+        background-color: #2f1160; /* Cambia il colore di sfondo del pulsante "Visualizza elenco" */
+        border-color: #08243d; /* Cambia il colore del bordo del pulsante "Visualizza elenco" */
+      }
+    </style>
+
+  </head>
+  <body>
+    
+    <div class="container-sm">
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+              <a href="/home.html"><button class="btn btn-outline-info" id="btnHome">Home</button>
+              </a>
+              <a class="navbar-brand" href="#">Scegli il tuo prossimo concerto!</a>
+            </div>
+          </nav>
+
+        <br>
+
+        <form class="row g-3">
+          <div class="col-md-2">
+            <label for="inputNumBiglietti" class="form-label">Numero Biglietti:</label>
+            <input type="number" class="form-control" id="inputNumBiglietti">
+          </div>
+          <div class="col-md-3">
+            <label for="inputPagamento" class="form-label">Tipo pagamento:</label>
+            <input type="text" class="form-control" id="inputPagamento">
+          </div>
+          <div class="col-md-3">
+            <label for="inputIdBiglietti" class="form-label">ID Spettacolo:</label>
+            <input type="text" class="form-control" id="inputIdSpettacolo" placeholder="SP01">
+          </div>
+          <div class="col-12">
+              <button type="button" class="btn btn-success" id="btnBook">Ordina ora</button>
+              <a href="./home.html"><button type="button" class="btn btn-secondary" id="btnBack">Visualizza elenco</button></a>
+          </div>
+        </form>
+
+    </div>
+
+    <div class="container-sm my-4">
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Cambia il tuo biglietto</a>
+          </div>
+        </nav>
+
+      <br>
+
+      <form class="row g-3">
+        <div class="col-md-2">
+          <label for="idOrdine" class="form-label">Codice biglietto</label>
+          <input type="number" class="form-control" id="codBiglietto">
+        </div>
+        <div class="col-md-3">
+          <label for="inputModNumBiglietti" class="form-label">Concerto</label>
+          <input type="number" class="form-control" id="inputModNumBiglietti">
+        </div>
+        <div class="col-12">
+            <button type="button" class="btn btn-success" id="btnChange">Modifica</button>
+            <a href="./home.html"><button type="button" class="btn btn-secondary" id="btnBack">Visualizza elenco</button></a>
+        </div>
+      </form>
+
+  </div>
+
+    <script src="./js/bookForm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
